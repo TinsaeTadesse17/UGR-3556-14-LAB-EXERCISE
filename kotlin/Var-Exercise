@@ -1,0 +1,8 @@
+import java.time.LocalTime
+import java.time.format.DateTimeFormatter
+
+fun main() {
+    val formatter = DateTimeFormatter.ofPattern("HH:mm:ss")
+    val timeNow = LocalTime.now().format(formatter)
+    println("Current Time: $timeNow")
+}
